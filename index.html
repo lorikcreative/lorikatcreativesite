@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Design With Presence - Home</title>
+	<link href="styleofpresence.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+	
+<body>
+	<div class="header">
+	<div class="logo">
+		<a href="index.html"><img src="images/LKat_Creative_Logo1_REV.jpg" width="100" height="95" alt="logo"></a>
+	</div>
+		<br>
+	<div class="topNav" id="myTopnav">
+		<a href="index.html" class="active">Home</a>
+		<a href="gallerylanding.html">See My Work</a>
+		<a href="aboutandcontact.html">About/Contact</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+	</div>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topNav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topNav";
+			}
+		}
+	</script>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+<!--Picture of Lower Twin Lake for top Banner-->
+<div class="topContent">
+	<h1 style="color: white; font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', 'sans-serif'; text-align: center; font-size: 6vw;">Design</h1>
+	<h2 style="text-align: center; font-size: 2.5vw; font-weight: bold; color: white; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; margin-left: 0.25vw; margin-top: -1.5em;">with Presence.</h2>
+		<br>
+</div>
+<!--Slideshow Functionality-->
+<div class="slideshow-container">
+	<div class="designContent fade">
+		<div class="numbertext">1 / 2</div>
+			<a href="graphicandmotion.html"><img src="images/Spheres_resized2.png" alt="Sample Landing Page" style="padding: 2.5%; width: 97%; height: auto;"></a>
+	</div>
+	<div class="designContent fade">
+		<div class="numbertext">2 / 2</div>
+			<a href="graphicandmotion.html"><img src="images/IP1_image.png" alt="Lori Kat Thinking About Alpine Lake" style="padding: 2.5%; width: 97%; height: auto;"></a>
+	</div>
+<a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+<a class="next" onClick="plusSlides(1)">&#10095;</a>
+<div style="text-align: center">
+	<span class="dot" onClick="currentSlide(1)"></span>
+	<span class="dot" onClick="currentSlide(2)"></span>
+</div>
+<script>
+	var slideIndex = 0;
+		showSlides();
+	
+	function showSlides() {
+		var i;
+		var slides = document.getElementsByClassName("designContent");
+			for (i=0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > slides.length)
+		{slideIndex=1}
+			slides[slideIndex-1].style.display = "block";
+		setTimeout(showSlides, 5000);
+	}
+</script>
+<!--Footers-->
+</div>
+	<footer>Website Design by Lori Kat Meier | <a href="aboutandcontact.html" style="color: white; text-decoration: none; font-size: 1rem;">About/Contact</a></footer>
+</body>
+</html>

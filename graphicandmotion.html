@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Design With Presence - Home</title>
+	<link href="graphicstyles.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+	
+<body>
+	<div class="header">
+	<div class="logo">
+		<a href="index.html"><img src="images/LKat_Creative_Logo1_REV.jpg" width="100" height="95" alt="logo"></a>
+	</div>
+		<br>
+	<div class="topNav" id="myTopnav">
+		<a href="index.html">Home</a>
+		<a href="gallerylanding.html" class="active">See My Work</a>
+		<a href="aboutandcontact.html">About/Contact</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+	</div>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topNav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topNav";
+			}
+		}
+	</script>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="block-title">
+			<h1 style="color: white; font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', 'sans-serif'; text-align: center; font-weight: bold;">Graphic and Motion Designs</h1><br/><br/><br/><br/>
+	</div>
+	<div class="row">
+		<div class="column">
+			<a href="graphic_alpinelakes.html"><img src="images/IP1_image.png" alt="Cool Web Design Video Thumbnail"></a>
+			<a href="graphic_wdwpintro.html"><img src="images/IntroVideoThumbnail.png" alt="Lori Thinking About Olallie Lake"></a>
+			<a href="graphic_yourenvironment.html"><img src="images/livenup_yourenvironment.png" alt="Vector Room with JBL Speaker"></a>
+		</div>
+		<div class="column">
+			<a href="graphic_weblayout.html"><img src="images/LayoutExample_IP2.png" alt="Bridge with Leaves and Light"></a>
+			<a href="graphic_pnwwordcloud.html"><img src="images/PNWTypeThumbnail.png" alt="Pacific Northwest Starry Night WordCloud"></a>
+			<a href="graphic_sherrymaid.html"><img src="images/SherryMaid_Logo1REV4.jpg" alt="Sherry Maid Logo"></a>
+			<a href="graphic_3dspheres.html"><img src="images/Spheres_resized2.png" alt="3D Striped Spheres"></a>
+		</div>
+	</div>
+		<footer>Website Design by Lori Kat Meier | <a href="aboutandcontact.html" style="color: white; text-decoration: none; font-size: 1rem;">About/Contact</a></footer>
+	</body>
+</html>
